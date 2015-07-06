@@ -1,2 +1,2 @@
-# project0.github.io
+# project0
 Project Zero

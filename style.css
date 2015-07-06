@@ -1,0 +1,36 @@
+.done {
+  line-color = red;
+  text-decoration: line-through;
+}
+h1 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 30px;
+}
+article {
+    color: purple;
+    text-align: left;
+    max-width: 500px;
+    padding: 2px;
+    margin: 0 auto;
+}
+body {
+  background-image: url("http://www.freedomarchives.org/images/montage_white.jpg");
+  color: black;
+  background-size: cover;
+} 
+@media (max-width: 500px) {
+      body {
+        background: red;
+    }
+  }
+#Savebutton {
+  margin:0 auto; 
+}
+
+#blog-comment {
+  color: blue;
+
+}
+
