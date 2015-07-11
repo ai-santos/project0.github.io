@@ -7,13 +7,12 @@
 $(function() {
 
  //create new blog post object and comments from form data
-  var newBlogPost = $("#blog-post").val();
+  var newPost = $("#blog-post").val();
   var newComment = $("#blog-comment").val();
-  var blogData = {name: newBlogPost, description: newComment}
+  var blogData = {name: newPost, description: newComment}
 
-  var newBlogPost = $("#new_blog_post");
-  var newItemForm = $("#new_task");
-  var blogPosts = $("#old-blog-posts");
+  var blogForm = $("#new_blog_form");
+  var blogArchive = $("#old-blog-posts");
 
 var templatingFunction = _.template($('#old-blog-posts-template').html());
 
@@ -26,19 +25,19 @@ var blogItems = [
 _.each(blogItems, function (item, index) {
   console.log(item);
   var itemView = $(templatingFunction(item));
-  blogPosts.append(itemView);
+  blogArchive.append(itemView);
   console.log(itemView);
 });
 
-  newBlogPost.on("submit", function(event) {
+  blogForm.on("submit", function(event) {
     event.preventDefault();
-    newBlogPost = $("#blog-post").val();
+    newPost = $("#blog-post").val();
     newComment = $("#blog-comment").val();
     console.log('form submitted!');
-    console.log(newBlogPost + ' ' + newComment);
+    console.log(newPost + ' ' + newComment);
      
  
-blogPosts.append('<p class="blog">' + newBlogPost + '  ' + newComment + '</p>');
+blogArchive.append('<p class="blog">' + newPost + '  ' + newComment + '</p>');
 
    });
 });

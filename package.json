@@ -1,0 +1,23 @@
+{
+  "name": "project0.github.io",
+  "version": "1.0.0",
+  "description": "Justice For Us Blog",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asantos3026/project0.github.io.git"
+  },
+  "keywords": [
+    "Activist",
+    "Blog"
+  ],
+  "author": "Aileen Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asantos3026/project0.github.io/issues"
+  },
+  "homepage": "https://github.com/asantos3026/project0.github.io#readme"
+}
