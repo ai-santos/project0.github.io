@@ -25,7 +25,6 @@
           Hey there, my name is Aileen. I work at the ACLU as a junior web developer. I recently met Davina at the Allied Media Conference, an event that brings together activists from all over the United States to share tools and tactics for transforming our communities through media based organizing. After meeting Davina, I wanted to connect with her to work on similar projects and tap into her list of contacts and resources. The challenge of our schedules, locations, and resources led us to create Justice for Us - a microblog.
           </h4>
         </p>
-          <hr>
           <form id="new_blog_form">
            <div class="form-group">
               <textarea class="form-control" id="blog-post" placeholder="Type your post here" rows="5"></textarea>
@@ -50,13 +49,18 @@
         <div class="form-group" id="comment-form">
               <textarea class="form-control" id="blog-comment" placeholder="Write Your Comments Here with your Name" rows="2"></textarea>
             <input type="submit" id="Savebutton" class="btn btn-success" value="Save Comment">
-        
-      </div> 
-    </div> 
+          </form>
+          <br><br>
+          <hr>
+
+          <h4>Blog Post Comments</h4>
+          <article id="blog-comments">
+
+          </div> 
+        </div> 
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
 </div>
 
 
@@ -74,10 +78,19 @@
   <script type="text/template" id="old-blog-posts-template">
     <div class="blog">
       <p>
-        <%= blog %> - <%= comment %>
+        <%= blog %> 
       </p>
       <hr>
     </div>   
+  </script>
+
+  <script type="text/template" id="blog-comments">
+  <div class="comment">
+    <p>
+      <%= comment =%>
+    </p>
+    <hr>
+  </div>
   </script>
  
 </body>
