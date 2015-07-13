@@ -15,16 +15,18 @@ var all = function (){
 
 //iterate through all blog posts
 _.each(allBlogPosts), function(data) {
-  //pass each blog post through template to append to view
+
+//pass each blog post through template to append to view
   var $blogPostHtml = $(template(data));
   $('#old-blog-posts').append($blogPostHtml);
 });
 
 //create new blog post to server
-  var create = function(newPost, ...) 
-  var blogItem = {blog:  comment: };
+  var create = function(newPost, newComment) 
+  var blogItem = {blog: newBlog, comment: newComment};
 
-    //   var phraseData = {word: newWord, definition: newDefinition};
+// 
+var phraseData = {word: newWord, definition: newDefinition};
     //   // send POST request to server to create new phrase
     //   $.post('/api/phrases', phraseData, function(data) {
     //     // pass phrase object through template and append to view
