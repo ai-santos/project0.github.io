@@ -7,7 +7,7 @@ $(function() {
 
   //get all archived blog posts
   var all = function (){
-    $.get('/api/posts', function (data) {
+    $.get('/api/microblogs', function (data) {
       var allBlogPosts = data;
       console.log(allBlogPosts);
      //iterate through all blog posts
