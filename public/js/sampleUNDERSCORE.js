@@ -1,39 +1,11 @@
 
+  $("#hover-button").on("mouseenter", function() {
+  $("#myModal").modal("show");
+  });
+
+
 $(function() {
 
-// `blogController` holds all our blog's funtionality
-  var blogController = {
-
-// compile blog template
-    var template = _.template($('#old-blog-posts').html()),
-
-//get all archived blog posts
-var all = function (){
-  $get.('/api/posts', function (data)
-    var allBlogPosts = data;
-}
-
-//iterate through all blog posts
-_.each(allBlogPosts), function(data) {
-
-//pass each blog post through template to append to view
-  var $blogPostHtml = $(template(data));
-  $('#old-blog-posts').append($blogPostHtml);
-});
-
-//create new blog post to server
-  var create = function(newPost, newComment) 
-  var blogItem = {blog: newBlog, comment: newComment};
-
-// 
-var phraseData = {word: newWord, definition: newDefinition};
-    //   // send POST request to server to create new phrase
-    //   $.post('/api/phrases', phraseData, function(data) {
-    //     // pass phrase object through template and append to view
-    //     var $phraseHtml = $(template(data));
-    //     $('#phrase-list').append($phraseHtml);
-    //   });
-    // };
  //create new blog post object and comments from form data
   var newPost = $("#blog-post").val();
   var newComment = $("#blog-comment").val();
@@ -79,8 +51,6 @@ $blogarticle.on("click", ".task", function(event) {
   console.log($("this"));
   $(this).children().addClass("done");
   $(this).addClass("done");
-
-blogForm[0].reset();
 
 });
 
